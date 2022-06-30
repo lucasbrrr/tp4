@@ -1,0 +1,34 @@
+.product-container {
+  background-color: #d8e0ec;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  font-size: larger;
+}
+
+.product-title {
+  cursor: pointer;
+  text-decoration: dashed;
+}
+
+.buttons-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remove-product-button {
+  background-color: #d8e0ec;
+  border: none;
+  font-size: 30px;
+}
+
+.price {
+  margin-right: 30px;
+}
+
+.amount {
+  padding-right: 30px;
+}

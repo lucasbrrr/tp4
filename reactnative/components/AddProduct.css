@@ -1,0 +1,13 @@
+.add-product-container {
+  width: 100%;
+  display: flex;
+}
+
+.add-product-input {
+  height: 60px;
+  border: none;
+  flex: 2;
+  background-color: #d8e0ec;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
