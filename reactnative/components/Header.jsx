@@ -11,7 +11,7 @@ const Header = (props) => {
         <div className="list">
           <b>Valor da lista: </b>R$ {props.numberPrices}
         </div>
-        <div className="purchased" onClick={props.handleFilter}>
+        <div className="purchased">
           <b>Itens Comprados: </b>R$ {props.numberConfirmed}
         </div>
       </div>
