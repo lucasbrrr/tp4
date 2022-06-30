@@ -3,18 +3,12 @@ import Button from "./Button";
 import "./AddProduct.css";
 
 const AddProduct = ({ handleproductAddition, changeScreen }) => {
-  const [inputData, setInputData] = useState("");
+  const [inputName, setinputName] = useState("");
   const [inputAmount, setInputAmount] = useState("");
   const [inputPrice, setInputPrice] = useState("");
 
   const handleInputChange = (e) => {
-    setInputData(e.target.value);
-  };
-
-  const handleAddproductClick = () => {
-    handleproductAddition(inputData, inputPrice, inputAmount);
-    changeScreen();
-    setInputData("");
+    setinputName(e.target.value);
   };
 
   const handlePriceChange = (e) => {
@@ -25,12 +19,18 @@ const AddProduct = ({ handleproductAddition, changeScreen }) => {
     setInputAmount(e.target.value);
   };
 
+  const handleAddproductClick = () => {
+    handleproductAddition(inputName, inputPrice, inputAmount);
+    changeScreen();
+    setinputName("");
+  };
+
   return (
     <div>
       <div className="add-product-container">
         <input
           onChange={handleInputChange}
-          value={inputData}
+          value={inputName}
           className="add-product-input"
           type="text"
         />
