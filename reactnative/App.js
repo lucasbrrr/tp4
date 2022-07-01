@@ -77,7 +77,6 @@ const App = () => {
   return (
     <div className="container">
       <Header
-        numberConfirmed={productsSum(productsFiltered())}
         numberproducts={products?.length}
         numberPrices={productsSum(products)}
       />
